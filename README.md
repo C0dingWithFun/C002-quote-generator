@@ -4,4 +4,4 @@ This is a simple project which fetches a random quote for the day. It fetched ne
 
 Here is the stream where I built this project: https://www.youtube.com/watch?v=Aw_GMHtriz4
 
-Here is the live website: https://quote-of-the-day-eta.vercel.app/
+Here is the live website: https://quote-of-the-day.codingwith.fun/
