@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 90vw;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+body#dark {
+  background-color: #1D1D1D;
+}
+
+body#dark * {
+  color: #ffffff;
+}
+
+header {
+  margin-top: 60px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a#theme-link {
+  margin-left: 8px;
+}
+
+a#theme-link img {
+  width: 32px;
+  height: 32px;
+}
+
+main {
+  margin: 50px 0 auto;
+}
+
+h2, h3 {
+  font-weight: normal;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 75px;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 50px;
+}
+
+main p {
+  font-size: 18px;
+}
+
+a#refresh-link {
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+a#refresh-link span {
+  display: inline-block;
+  height: 24px;
+}
+
+a#refresh-link img {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
+
+body#dark a#refresh-link img {
+  filter: invert(1);
+}
+
+footer {
+  margin-bottom: 40px;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a:link,
+a:visited {
+  color: black;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+a:hover,
+a:active {
+  opacity: 0.5;
+}
+
+footer {
+  padding-top: 32px;
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  main p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    margin-top: 36px;
+  }
+  main {
+    margin-top: 36px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  main p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer nav {
+    flex-direction: column;
+  }
+}
